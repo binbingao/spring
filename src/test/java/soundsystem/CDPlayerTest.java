@@ -18,7 +18,7 @@ public class CDPlayerTest {
 	public final StandardOutputStreamLog log=new StandardOutputStreamLog();
 	
 	@Autowired
-	private CDPlayer player;
+	private MediaPlayer player;
 	@Autowired
 	private CompactDisc cd;
 	
@@ -31,7 +31,7 @@ public class CDPlayerTest {
 	public void play(){
 		player.play();
 		//System.out.println("aaaa   "+log.getLog());
-		assertEquals("Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles", log.getLog());
+		assertEquals("Playing Sgt. Pepper's Lonely Hearts CLub Band by The Beatles", log.getLog());
 		
 	}
 }
